@@ -1,6 +1,6 @@
 ---
 applications:
-- name: create-react-app-devops-staging
+- name: my-react-devops-staging
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
   command: npm run bluemix
   disk_quota: 256MB

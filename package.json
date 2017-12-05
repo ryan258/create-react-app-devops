@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app-devops",
+  "name": "my-react-devops",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
@@ -20,15 +20,13 @@
   "proxy": "http://localhost:8081",
   "scripts": {
     "bluemix": "node build/index.js",
-    "start": "concurrently \"PORT=8080 react-scripts start\" \"PORT=8081 babel-watch index.js\"",
+    "start":
+      "concurrently \"PORT=8080 react-scripts start\" \"PORT=8081 babel-watch index.js\"",
     "build": "react-scripts build && babel index.js -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
+    "presets": ["es2015", "stage-2"]
   }
 }
